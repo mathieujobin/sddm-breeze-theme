@@ -58,6 +58,8 @@ PlasmaComponents.ButtonRow {
     PlasmaComponents.ToolButton {
         id: restartButton
         flat: false
+width: 48
+height: 48
         iconSource: "system-reboot"
         visible: root.canReboot
         checkable: true
@@ -72,6 +74,8 @@ PlasmaComponents.ButtonRow {
     PlasmaComponents.ToolButton {
         id: shutdownButton
         flat: false
+width: 48
+height: 48
         iconSource: "system-shutdown"
         visible: root.canShutdown
         checkable: true
@@ -87,6 +91,8 @@ PlasmaComponents.ButtonRow {
     PlasmaComponents.ToolButton {
         id: logoutButton
         flat: false
+width: 48
+height: 48
         iconSource: "system-log-out"
         visible: root.canLogout
         checkable: true

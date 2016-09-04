@@ -70,11 +70,11 @@ Image {
 
         //Display the loginpromt only in the primary screen
         readonly property rect geometry: screenModel.geometry(screenModel.primary)
-        width: geometry.width
-        x: geometry.x
+        width: geometry.width - 6
+        x: geometry.x + 3
         height: units.largeSpacing*14
         //Display the BreezeBlock in the middle of each screen
-        y: geometry.y + (geometry.height / 2) - (height / 2)
+        y: 3 // geometry.y + (geometry.height / 2) - (height / 2)
 
         initialItem: BreezeBlock {
             id: loginPrompt
